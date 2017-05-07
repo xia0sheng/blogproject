@@ -1,0 +1,153 @@
+[2017-05-06 02:31:06 +0800] [19811] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 02:31:06 +0800] [19811] [INFO] Listening at: http://127.0.0.1:8001 (19811)
+[2017-05-06 02:31:06 +0800] [19811] [INFO] Using worker: sync
+[2017-05-06 02:31:06 +0800] [19814] [INFO] Booting worker with pid: 19814
+[2017-05-06 02:34:34 +0800] [19834] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 02:34:34 +0800] [19834] [INFO] Listening at: http://127.0.0.1:8001 (19834)
+[2017-05-06 02:34:34 +0800] [19834] [INFO] Using worker: sync
+[2017-05-06 02:34:34 +0800] [19837] [INFO] Booting worker with pid: 19837
+[2017-05-06 02:35:48 +0800] [19811] [INFO] Handling signal: term
+[2017-05-06 02:35:48 +0800] [19814] [INFO] Worker exiting (pid: 19814)
+[2017-05-06 02:35:49 +0800] [19811] [INFO] Shutting down: Master
+[2017-05-06 02:35:55 +0800] [19834] [INFO] Handling signal: term
+[2017-05-06 02:35:55 +0800] [19837] [INFO] Worker exiting (pid: 19837)
+[2017-05-06 02:35:56 +0800] [19834] [INFO] Shutting down: Master
+[2017-05-06 02:39:31 +0800] [19867] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 02:39:31 +0800] [19867] [INFO] Listening at: http://127.0.0.1:8001 (19867)
+[2017-05-06 02:39:31 +0800] [19867] [INFO] Using worker: sync
+[2017-05-06 02:39:31 +0800] [19870] [INFO] Booting worker with pid: 19870
+[2017-05-06 02:39:51 +0800] [19867] [INFO] Handling signal: term
+[2017-05-06 02:39:52 +0800] [19870] [INFO] Worker exiting (pid: 19870)
+[2017-05-06 02:39:52 +0800] [19867] [INFO] Shutting down: Master
+[2017-05-06 20:27:43 +0800] [1769] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 20:27:43 +0800] [1769] [INFO] Listening at: unix:/tmp/blogproject.socket (1769)
+[2017-05-06 20:27:43 +0800] [1769] [INFO] Using worker: sync
+[2017-05-06 20:27:43 +0800] [1772] [INFO] Booting worker with pid: 1772
+[2017-05-06 20:28:13 +0800] [1777] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 20:28:13 +0800] [1777] [INFO] Listening at: unix:/tmp/blogproject.socket (1777)
+[2017-05-06 20:28:13 +0800] [1777] [INFO] Using worker: sync
+[2017-05-06 20:28:13 +0800] [1780] [INFO] Booting worker with pid: 1780
+[2017-05-06 20:28:25 +0800] [1785] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 20:28:25 +0800] [1785] [INFO] Listening at: unix:/tmp/blogproject.socket (1785)
+[2017-05-06 20:28:25 +0800] [1785] [INFO] Using worker: sync
+[2017-05-06 20:28:25 +0800] [1788] [INFO] Booting worker with pid: 1788
+[2017-05-06 20:29:02 +0800] [1793] [INFO] Starting gunicorn 19.7.1
+[2017-05-06 20:29:02 +0800] [1793] [INFO] Listening at: unix:/tmp/blogproject.socket (1793)
+[2017-05-06 20:29:02 +0800] [1793] [INFO] Using worker: sync
+[2017-05-06 20:29:02 +0800] [1796] [INFO] Booting worker with pid: 1796
+[2017-05-06 20:54:17 +0800] [1769] [INFO] Handling signal: term
+[2017-05-06 20:54:17 +0800] [1772] [INFO] Worker exiting (pid: 1772)
+[2017-05-06 20:54:17 +0800] [1777] [INFO] Handling signal: term
+[2017-05-06 20:54:17 +0800] [1780] [INFO] Worker exiting (pid: 1780)
+[2017-05-06 20:54:17 +0800] [1785] [INFO] Handling signal: term
+[2017-05-06 20:54:17 +0800] [1788] [INFO] Worker exiting (pid: 1788)
+[2017-05-06 20:54:17 +0800] [1793] [INFO] Handling signal: term
+[2017-05-06 20:54:17 +0800] [1796] [INFO] Worker exiting (pid: 1796)
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 259, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 382, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/sock.py", line 208, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/blogproject.socket'
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 259, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 382, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/sock.py", line 208, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/blogproject.socket'
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 259, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 382, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/sock.py", line 208, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/blogproject.socket'
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 259, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/www/myproject/env/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/arbiter.py", line 382, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/usr/local/www/myproject/env/lib/python3.6/site-packages/gunicorn/sock.py", line 208, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/blogproject.socket'
